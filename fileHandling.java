@@ -6,9 +6,9 @@ public class fileHandling {
             {
                      try
                        {
-                         //File f1=new File("C:/Users/HP/Desktop/Prodapt/Hello.txt");
-                         //f1.createNewFile();
-                         //PrintWriter p =new PrintWriter(new FileOutputStream(f1,true));
+                         File f1=new File("C:/Users/HP/Desktop/Prodapt/Hello.txt");
+                         f1.createNewFile();
+                         PrintWriter p =new PrintWriter(new FileOutputStream(f1,true));
                          
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			Employee e=null;
@@ -58,13 +58,14 @@ public class fileHandling {
 				         				 
 				         			}
 				         			if(equals==0) a.add(e);
-                                                 /*p.println("--------------------------------------------------------------------------");
+                                                 p.println("--------------------------------------------------------------------------");
                                                     p.println("Name is:"+e.name);
                                                     p.println("Age is:"+e.age);
                                                     p.println("Sal is:"+e.sal);
                                                     p.println("Designation is:"+e.Designation); 
                                                  p.println();
-                                                 p.flush();*/
+                                                 p.flush();
+					    p.println("--------------------------------------------------------------------------");
                                                }
 					    }while(d!=4);
 					    break;
